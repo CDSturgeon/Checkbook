@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckbookRegister", "CheckbookRegister.csproj", "{7C34B06E-56CB-4520-A489-0D865FFA7F44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeLouisvilleLibrary", "..\CodeLouisvilleLibrary\CodeLouisvilleLibrary.csproj", "{BD0B05D2-DD3B-4459-90B6-7A6EC4A740EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7C34B06E-56CB-4520-A489-0D865FFA7F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C34B06E-56CB-4520-A489-0D865FFA7F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C34B06E-56CB-4520-A489-0D865FFA7F44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0B05D2-DD3B-4459-90B6-7A6EC4A740EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0B05D2-DD3B-4459-90B6-7A6EC4A740EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0B05D2-DD3B-4459-90B6-7A6EC4A740EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0B05D2-DD3B-4459-90B6-7A6EC4A740EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

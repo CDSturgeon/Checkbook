@@ -1,4 +1,6 @@
 ﻿using System;
+using CheckbookRegister.Misc;
+
 namespace CheckbookRegister.Models
 {
     public class Accounts
@@ -16,16 +18,41 @@ namespace CheckbookRegister.Models
         public void AddCreditTx()
         {
             var txCredit = new Credits();
-            Console.Write("Date: ");
-            txCredit.Date = Console.ReadLine();
+
+            Console.Write("Date (mm/dd/yyyy): ");
+            txCredit.Date = Validation.Date(Console.ReadLine());
             Console.Write("Amount: ");
-            txCredit.Amount = double.Parse(Console.ReadLine());
+            txCredit.Amount = double.Parse(Console.ReadLine());//need to add validation
             Console.Write("Description: ");
             txCredit.Description = Console.ReadLine();
 
             credits.Add(txCredit);
+        }
+
+        public void DispalyCreditTx()
+        {
             foreach (var item in credits)
-                Console.WriteLine(item.Date +"\t"+item.Description+"\t"+item.Amount);
+                Console.WriteLine(item.Date + "\t" + item.Amount + "\t" + item.Description);
+        }
+
+        public void AddDebitTx()
+        {
+            var txDebit = new Debits();
+
+            Console.Write("Date (mm/dd/yyyy): ");
+            txDebit.Date = Validation.Date(Console.ReadLine());
+            Console.Write("Amount: ");
+            txDebit.Amount = double.Parse(Console.ReadLine());//need to add validation
+            Console.Write("Description: ");
+            txDebit.Description = Console.ReadLine();
+
+            debits.Add(txDebit);
+        }
+
+        public void DispalyDebitTx()
+        {
+            foreach (var item in debits)
+                Console.WriteLine(item.Date + "\t" + item.Amount + "\t" + item.Description);
         }
     }
 }
